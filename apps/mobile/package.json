@@ -9,6 +9,7 @@
     "web": "expo start --web",
     "tsc-check": "tsc --noEmit"
   },
+  "prettier": "@traxd/prettier-config",
   "dependencies": {
     "expo": "~55.0.25",
     "expo-status-bar": "~55.0.6",
@@ -16,7 +17,10 @@
     "react-native": "0.83.6"
   },
   "devDependencies": {
+    "@traxd/prettier-config": "workspace:^",
+    "@traxd/typescript-config": "workspace:^",
     "@types/react": "~19.2.2",
+    "prettier": "^3.7.4",
     "typescript": "~5.9.2"
   },
   "private": true

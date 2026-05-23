@@ -2,12 +2,30 @@
   "name": "@traxd/api",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "dev": "tsx src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc-check": "tsc --noEmit"
   },
+  "prettier": "@traxd/prettier-config",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^7.8.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.21.0"
+  },
+  "devDependencies": {
+    "@traxd/prettier-config": "workspace:^",
+    "@traxd/typescript-config": "workspace:^",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.15.3",
+    "prettier": "^3.7.4",
+    "prisma": "^7.8.0",
+    "tsx": "^4.22.3"
+  }
 }

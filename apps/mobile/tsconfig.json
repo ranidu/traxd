@@ -1,6 +1,8 @@
 {
-  "extends": "expo/tsconfig.base",
+  "extends": "@traxd/typescript-config/react-native.json",
   "compilerOptions": {
-    "strict": true
-  }
+    "rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

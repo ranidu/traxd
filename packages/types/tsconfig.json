@@ -1,5 +1,5 @@
 {
-  "extends": "@traxd/typescript-config/react-library.json",
+  "extends": "@traxd/typescript-config/node.json",
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src",

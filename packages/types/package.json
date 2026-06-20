@@ -2,8 +2,12 @@
   "name": "@traxd/types",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "exports": {
-    "./*": "./src/*.tsx"
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts",
+    "./schemas": "./src/schemas/index.ts",
+    "./validation": "./src/validation/index.ts"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -21,6 +25,7 @@
   },
   "dependencies": {
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "zod": "^4.4.3"
   }
 }

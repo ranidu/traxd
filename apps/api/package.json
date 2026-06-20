@@ -5,10 +5,10 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc-check": "tsc --noEmit",
-    "prisma:generate": "prisma generate dev & prisma generate"
+    "prisma:generate": "prisma generate dev && prisma generate"
   },
   "prettier": "@traxd/prettier-config",
   "keywords": [],
@@ -17,13 +17,18 @@
   "dependencies": {
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
+    "bcrypt": "^6.0.0",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "pg": "^8.21.0"
+    "jose": "^6.2.3",
+    "pg": "^8.21.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@traxd/prettier-config": "workspace:^",
+    "@traxd/types": "workspace:^",
     "@traxd/typescript-config": "workspace:^",
+    "@types/bcrypt": "^6.0.0",
     "@types/express": "^5.0.6",
     "@types/node": "^22.15.3",
     "prettier": "^3.7.4",

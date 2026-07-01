@@ -1,0 +1,10 @@
+model VisitItem {
+    id String @id @default(uuid())
+    visit Visit @relation(fields: [visitId], references: [id])
+    visitId String
+    itemName String
+    rating Int
+    remark String
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}

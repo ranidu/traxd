@@ -49,6 +49,20 @@ See `apps/api/CLAUDE.md` and `apps/mobile/CLAUDE.md` for package-specific conven
   - `apps/mobile`: `module: "ESNext"` + `moduleResolution: "Bundler"`
 - Project decisions and longer-form documentation also live in Notion (parent page: "Traxd"). This file is the fast-loading summary Claude Code should trust as ground truth for conventions; Notion has more narrative detail if needed.
 
+## PR Conventions
+
+- **Title:** conventional-commit style — `type: short description` (e.g. `feat: add place/visit tracking models and mobile auth screens`). Common types: `feat`, `fix`, `chore`, `refactor`, `docs`. If a PR bundles unrelated concerns (e.g. backend models + mobile screens), a single umbrella title is fine for this solo project — no need to split into multiple PRs just for title cleanliness.
+- **Description template:**
+  ```
+  ## Summary
+  - Bullet per logical change, grouped by area (api / mobile / packages)
+
+  ## Test plan
+  - [ ] Have you run `pnpm tsc-check` to detect any lint errors
+  - [ ] Checklist of what to verify (commands to run, screens to click through)
+  ```
+- Apply this automatically when creating or editing PRs — no need to ask each time unless the change set is unusual.
+
 ## Commands Reference (keep updated)
 
 - `pnpm install` — install all workspace deps from root

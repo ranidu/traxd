@@ -7,6 +7,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
+    "lint": "eslint . --max-warnings 0",
     "tsc-check": "tsc --noEmit"
   },
   "prettier": "@traxd/prettier-config",
@@ -24,9 +25,11 @@
     "react-native-screens": "~4.23.0"
   },
   "devDependencies": {
+    "@traxd/eslint-config": "workspace:*",
     "@traxd/prettier-config": "workspace:^",
     "@traxd/typescript-config": "workspace:^",
     "@types/react": "~19.2.2",
+    "eslint": "^9.39.1",
     "prettier": "^3.7.4",
     "tailwindcss": "^3.4.19",
     "typescript": "~5.9.2"
